@@ -60,7 +60,7 @@ function displayGifs() {
           $("#resultsPlace").empty();
 
           // Creates a div to hold the movie
-          $("#resultsPlace").append(response.gif);
+          $("#resultsPlace").append(response.data[0].images.fixed_height.url);
         });
 		});
       }
