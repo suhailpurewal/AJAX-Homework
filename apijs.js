@@ -25,8 +25,8 @@ var topics = ["wu-tang", "space", "guitar", "jackie chan", "rocket", "funny"];
         }
       };
 
-
-
+      renderButtons();
+      displayGifs();
 
 // function to add whatever you type in field
     $("#addButton").click(function() {
@@ -37,8 +37,7 @@ var topics = ["wu-tang", "space", "guitar", "jackie chan", "rocket", "funny"];
         console.log("button clicked array updated")
         renderButtons();
       });
-      renderButtons();
-      displayGifs();
+
 
 // function to search whatever button you click
 function displayGifs() {
@@ -58,9 +57,12 @@ function displayGifs() {
         }).done(function(response) {
           console.log(response);
           $("#resultsPlace").empty();
+          for (var i = 0; i < 10; i++); {
+          $("#resultsPlace").append("<img src='" + response.data[0].images.fixed_height.url + "'>");
+        }
 
           // Creates a div to hold the movie
-          $("#resultsPlace").append(response.data[0].images.fixed_height.url);
+          
         });
 		});
       }
