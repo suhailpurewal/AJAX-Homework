@@ -55,7 +55,7 @@ function displayGifs() {
 		console.log(search);
 
         var apiKey = "pdENotnHGub1ILrqJOg9w99ZiX9p0Pjp";
-        var queryURL = "https:api.giphy.com/v1/gifs/search?api_key="+ apiKey + "&q=" + search + "&limit=10&offset=0&rating=PG-13&lang=en";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key="+ apiKey + "&q=" + search + "&limit=10&offset=0&rating=PG-13&lang=en";
 
 
         $.ajax({
