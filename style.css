@@ -1,0 +1,25 @@
+.outer-container {
+     width: 300px;
+     margin-bottom: 20px;
+     display: inline-block;
+}
+.gifButton, .btn {
+	background-color: grey;
+	color: blue;
+}
+.images-returned {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 250px;
+}
+p {
+	color: red;
+	font-weight: bold;
+}
+body {
+	background-color: grey;
+	background: url(space.jpg) no-repeat center center fixed;
+}
+.form-control {
+	width: 350px;
+}
